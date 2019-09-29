@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Royal Gorge Bridge</title>
+        <meta name="description" content="Mathematics of the Royal Gorge Bridge: Parabola.">
+        <meta name="author" content="Soya">
+        <meta name="keywords" content="Royal Gorge Bridge, Quadratic, Parabola">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="history.html">History</a></li>
+                <li> <a href="curve-fitting.html">Curve Fitting</a></li>
+                <li> <a href="evaluation.html"> Evaluation </a></li>
+                <li> <a href="bibliography.html"> Bibliography </a></li>
+            </ul>
+        </nav>
+        
+        <section>   
+        <article> <!-- article on dimensions -->
+        <h2> Dimensions </h2>
+            
+            <div>
+                
+                <div style="float: left;">            
+                <caption> <mark> Highlighted = Useful information for the purpose of this project </mark> </caption>
+                <ul>
+                <li> <strong> Total bridge length: </strong> 1,260 feet (387m) </li>
+                <li> <strong> Bridge width: </strong> 18 feet (5m) </li>
+                <li> <mark> <strong> Main span: </strong> 880 feet (268m) </mark> </li>
+                <li> <mark> <strong> Tower height: </strong> 150 feet (46m) </mark></li>
+                <li> <mark> <strong> Deck Height: </strong> 956 feet above the Arkansas River </mark> </li>
+                <li> <strong> Walkway: </strong>1,292 wooden planks, 250 of which needs to be replaced annually </li>
+                <li> <strong> Elevation: </strong> 6,700 feet above sea level </li>
+                <li> 2,100 strands of No. 9 galvanised wire in the cables, each weighing 300 tons </li>
+                <li> 1000 tons of steel on the bridge floor </li>
+                <li> Supports in excess of two million pounds of mass</li>
+            </ul>
+                </div>
+                
+                <iframe id="dimensions" width="420" height="315" src="https://www.youtube.com/embed/BaOpnhZTA-g?start=48&end=80;">
+                </iframe>
+            </div>
+            
+        </article>
+            
+        <!-- The dimensions and iframe have float:left; so it must be cleared -->
+        <article style="clear:left; clear:right;"> 
+        <h2> Curve Fitting</h2>
+            <h3>Step 1:</h3>
+            <p> Crop the image’s width to the edges of the towers</p>
+                
+            <img class="curveImage" src="images/stepOne.jpg">
+            
+            
+            <h3> Step 2: </h3>
+            <p> Insert photo in Desmos, and set width to 880 (the length of the main span, or the distance between the two towers) and scale the height accordingly. The vertical lines x=440 and x=-440 may help. </p>
+
+            <h3> Step 3: </h3>
+            <p> Align the image such that the x-axis is the walkway. The reason for choosing the walkway over the Arkansas River as the baseline is because the river cannot be clearly defined in the photograph used. </p>
+            <img class="curveImage" src="images/stepThree.png">                
+            <h3> Step 4: </h3>
+            <p> Noting that the towers on the graph span from approximately y=-50 to y=50, and hence approximating the height of the towers as roughly symmetrical about the x-axis/walkway, the height of the tower from the walkway to the apex is estimated as the half of the given value, or 150m/2=75m. </p>
+            <img class="curveImage" src="images/stepFour.png">
+            
+            <h3> Step 5: </h3>
+            <p> Since the y-axis is the axis of symmetry of the parabola, the x-axis is the walkway, and the graph is concave up, the minimum point can be determined as (0, 0). </p>
+            
+            <h3> Step 6: </h3>
+            <p> Hence, the coefficients b and c for the general quadratic equation ax^2+bx+c can be determined as 0.</p>
+            
+            <h3> Step 7: </h3>
+            <p> The apex of the right tower, (440, 75), is on the parabola and thus the coefficient a can be determined: </p>
+            <div class="equation">
+                <img src="http://latex.codecogs.com/svg.latex?y=ax^2" border="0"/>
+                <br>
+                <img src="http://latex.codecogs.com/svg.latex?75=a(440)^2" border="0"/>
+                <br>
+                <img src="http://latex.codecogs.com/svg.latex?a=75/193600=3/7744" border="0"/>
+            </div>
+            
+            <h3> Step 8: </h3>
+            <p> Therefore, the general equation for the curve with its base at the runway is </p>
+            <div class="equation">
+                <img src="http://latex.codecogs.com/svg.latex?y=3/7744 x^2" border="0"/>
+            </div>
+            <img class="curveImage" src="images/stepEight.png" style="width:90%">
+        </article>
+        </section>
+        
+        <footer> All rights reserved. &copy; </footer>
+    </body>
+</html>
