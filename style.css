@@ -160,8 +160,9 @@ table {
 }
 
 #bibliography {
+    width: 80%;
+    height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 80vw;
 }
